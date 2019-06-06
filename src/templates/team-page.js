@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import github from '../img/github-icon.svg'
+import twitter from '../img/social/twitter.svg'
 
 import Layout from '../components/Layout'
 
@@ -13,7 +15,32 @@ export const TeamPageTemplate = ({
   jobs,
 }) => (
   <div>
-    Test
+    <div className="cTeam">
+        <div className="cTeam-inner">
+            <h1 className="cTeam-title">{title}</h1>
+            <div className="cTeam-list">
+                {members.map((member, index) => {
+                    console.log('Hey!', member, github)
+                    return (
+                        <div className="cTeamMember" key={index}>
+                            <div className="cTeamMember-image" style={{
+                                backgroundImage:`url(${member.image.childImageSharp.fluid.src})`
+                            }}></div>
+                            <div className="cTeamMember-infos">
+                                <div className="cTeamMember-name">{ member.name }</div>
+                                <div className="cTeamMember-title">{ member.title }</div>
+                                <div className="cTeamMember-text">{ member.text }</div>
+                                <div className="cTeamMember-links">
+                                    { member.twitterUrl ? <a href={member.twitterUrl} aria-label="View their Twitter"><img src={twitter} alt="View their Twitter" /></a> : null }
+                                    { member.githubUrl ? <a href={member.githubUrl} aria-label="View their Github"><img src={github} alt="View their Github" /></a> : null }
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+    </div>
   </div>
 )
 
@@ -35,6 +62,7 @@ const TeamPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
+        members={frontmatter.members}
       />
     </Layout>
   )
@@ -52,7 +80,7 @@ export default TeamPage
 
 export const pageQuery = graphql`
   query TeamPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "team-page" } }) {
       frontmatter {
         title
         heading
