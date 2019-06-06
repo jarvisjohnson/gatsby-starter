@@ -1,0 +1,97 @@
+body {
+    background:$c-black !important;
+}
+.cNav {
+    padding:15px 0;
+    border-bottom:1px solid $c-teal;
+    &-search {
+        display: none;
+    }
+    .navbar-brand {
+        img {
+            position:relative;
+            z-index:6;
+            width:200px;
+            height:83px;
+            @media(max-width:1024px) {
+                width:100px;
+                height:41px;
+            }
+        }
+    }
+    .container {
+        width:90%;
+        max-width: 1340px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .navbar-start {
+        display: flex;
+    }
+    .navbar-item {
+        display: block;
+        margin:0 25px;
+        @extend .aktiv;
+        @extend .animatable;
+        font-size: 20px;
+        color: $c-teal;;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        @media(max-width:1024px) {
+            font-size:35px;
+            line-height: 2;
+        }
+        &:hover {
+            color:$c-white;
+        }
+    }
+    .navbar-menu {
+        @extend .animatable;
+
+        @media(max-width:1024px) {
+            width:100vw;
+            height:100vh;
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            padding-top:120px;
+            background:$c-black;
+            z-index:5;
+            transform:translateY(-100%);
+            pointer-events: none;
+            opacity: 0;
+            &.is-active {
+                opacity:1;
+                pointer-events: auto;
+                transform: translateY(0);
+            }
+            .navbar-start {
+                flex-direction: column;
+            }
+        }
+    }
+    .navbar-burger {
+        position: absolute;
+        top:50%;
+        right:25px;
+        transform:translateY(-50%);
+        z-index:6;
+        display: none;
+        @media(max-width: 1024px) {
+            display:block;
+        }
+        >span {
+            width:35px;
+            height:2px;
+            background:$c-white;
+            display: block;
+            margin:8px 0;
+        }
+    }
+}
