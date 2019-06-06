@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
@@ -35,14 +34,14 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="cNav is-transparent"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Global Mesh Labs" />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,33 +59,25 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
+              <a className="navbar-item" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/" target="_blank">
+                Lot49
               </a>
+              <Link className="navbar-item" to="/products">
+                Development
+              </Link>
+              <a className="navbar-item" href="https://github.com/global-mesh-labs" target="_blank">
+                Blog
+              </a>
+              <Link className="navbar-item" to="/team">
+                Team
+              </Link>
+              <a className="navbar-item" href="https://inthemesh.com/archive/author/richard-myers/" target="_blank">
+                Blog
+              </a>
+              <div class="cNav-search">
+                <input type="text" id="cNav-search" />
+                <label for="cNav-search" aria-label="Search"></label>
+              </div>
             </div>
           </div>
         </div>
