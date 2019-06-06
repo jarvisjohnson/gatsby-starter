@@ -10,6 +10,15 @@
         margin:0 auto;
         position: relative;
     }
+    &-title {
+        margin:50px 0;
+        text-transform: uppercase;
+        font-family: $f-aktiv;
+        font-weight: bold;
+        font-size: 40px;
+        color: $c-white;;
+        letter-spacing: 0;
+    }
     &Member {
         width:45%;
         max-width: 520px;

@@ -17,7 +17,7 @@ export const TeamPageTemplate = ({
   <div>
     <div className="cTeam">
         <div className="cTeam-inner">
-            <h1 className="cTeam-title">{title}</h1>
+            <h1 className="cTeam-title">{heading}</h1>
             <div className="cTeam-list">
                 {members.map((member, index) => {
                     console.log('Hey!', member, github)
