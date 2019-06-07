@@ -1,0 +1,25 @@
+.cHomeSlider {
+  position: relative;
+  min-height:  50vh;
+  display:flex;
+  flex-direction: column;
+  &-inner {
+    position:relative;
+    z-index:3;
+    width:90%;
+    max-width:1240px;
+    margin:auto;
+    padding:35px 0;
+  }
+  &-title {
+    max-width:460px;
+    font-size:20px;
+  }
+  &-subtitle {
+    width: 30%;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      width:60%
+    }
+  }
+}

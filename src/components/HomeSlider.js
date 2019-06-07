@@ -6,15 +6,15 @@ class HomeSlider extends React.Component {
     const { data } = this.props
 
     return (
-      <div  className="cHomeHeader">
-        <img src={infographic} alt="Global Mesh Labs" />
-        <div className="cHomeHeader-inner">
-          <div className="cHomeHeader-title"> 
+      <div  className="cHomeSlider">
+        <div className="cHomeSlider-inner">
+          <div className="cHomeSlider-title"> 
             {this.props.children[0]}
           </div>
-          <div className="cHomeHeader-subtitle"> 
+          <div className="cHomeSlider-subtitle"> 
             {this.props.children[1]}
           </div>
+        <img src={infographic} alt="Global Mesh Labs" />
         </div>
       </div>
     )
