@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import HomeHeader from '../components/HomeHeader'
 
 export const IndexPageTemplate = ({
   image,
@@ -16,7 +17,11 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
+    <HomeHeader>
+      <h1>Global Mesh Labs & the Lot49 mesh protocol</h1>
+      <p>Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    </HomeHeader>
+    {/* {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -109,8 +114,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+    {/* </section> */}
   </div>
 )
 
