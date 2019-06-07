@@ -47,7 +47,27 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      <Footer 
+        mailTo={'info@globalmeshlabs.com'}
+        linkList={ 
+          [
+            {'Twitter': 'https://twitter.com/?lang=en'}, 
+            {'Slack': 'https://twitter.com/?lang=en'}, 
+            {'TxTenna': 'https://twitter.com/?lang=en'}, 
+            {'Blog': 'https://twitter.com/?lang=en'}, 
+            {'Node Map': 'https://twitter.com/?lang=en'} 
+          ]
+        }
+        subLinks={
+          [
+            {'Privacy': 'https://twitter.com/?lang=en'}, 
+            {'Terms of Service': 'https://twitter.com/?lang=en'}, 
+            {'Open Source': 'https://twitter.com/?lang=en'}
+          ]
+        }
+      />
+
+
     </div>
   )
 }
