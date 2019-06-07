@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logo.svg'
+import logo from '../img/logo-black.svg'
 import { Link } from 'gatsby'
 import chevron from '../img/chevron-right.svg'
 
@@ -44,7 +44,7 @@ const Footer = class extends React.Component {
             <div className="content has-text-centered">
               <img
                 src={logo}
-                alt="Kaldi"
+                alt="Mesh Labs"
                 style={{ width: '14em', height: '10em' }}
               />
             </div>
