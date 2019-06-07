@@ -19,6 +19,10 @@ body {
         width: 30%;
         padding: 10px;
         margin:10px 0;
+        @media (max-width: 425px) {
+            width: 60%;
+            margin:0;
+        }
     }
     &-btn {
         padding: 11px;
@@ -26,10 +30,14 @@ body {
         background-color: $c-teal;
         color: $c-white;
         border: 1px solid $c-teal;
+        @media (max-width: 425px) {
+            width: 30%;
+        }
     }
     form {
         max-width: 1340px;
         margin: auto;
+        width:100%;
     }
     &-linkList {
         display: flex;
@@ -38,6 +46,12 @@ body {
         margin: auto;
         margin-bottom: 20px;
         max-width: 1340px;
+        flex-wrap: wrap;
+        @media (max-width: 425px) {
+            margin: auto;
+            text-align: center;
+            width: 100%;
+        }
     }
     &-link {
         &.blue {
@@ -48,6 +62,11 @@ body {
             font-size:15px;
             &:hover {
                 color: $c-white;
+            }
+            @media (max-width: 425px) {
+                text-align: center;
+                margin:10px;
+                width:100%;
             }
         }
         &.white {
@@ -61,12 +80,20 @@ body {
             &:hover {
                 color: $c-teal;
             }
+            @media (max-width: 425px) {
+                margin: auto;
+                text-align: center;
+                width:30%;
+            }
         }
     }
     &-subsection-inner {
         display: flex;
         margin: auto;
         max-width: 1340px;
+        @media (max-width: 1024px) {
+            justify-content: space-evenly;
+        }
     }
     &-subtext {
         margin-bottom: 20px;
@@ -76,9 +103,17 @@ body {
         display: flex;
         justify-content: space-between;
         width: 45%;
+        flex-wrap: wrap;
+        @media (max-width: 425px) {
+            margin:30px;
+            text-align: center;
+        }
     }
     .content {
         width: 30%;
+        @media (max-width: 425px) {
+            display:none;
+        }
     }
     &-footnote {
         color: grey;
