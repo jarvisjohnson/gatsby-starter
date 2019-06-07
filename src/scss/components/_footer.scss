@@ -4,6 +4,9 @@ body {
 }
 .cFooter {
     text-align: center;
+    &-title {
+        font-size: 40px;
+    }
     &-info {
         border-top:1px solid $c-teal;
         border-bottom:1px solid $c-teal;
@@ -40,7 +43,6 @@ body {
     }
     &-subsection-inner {
         display: flex;
-        justify-content: space-evenly;
         margin: auto;
     }
     &-subtext {
@@ -50,10 +52,14 @@ body {
         margin: auto 0;
         display: flex;
         justify-content: space-between;
-        width: 40%;
+        width: 45%;
     }
     .content {
-        width: 50%;
+        width: 30%;
+    }
+    &-footnote {
+        color: grey;
+        font-size: 0.7rem;
     }
 }
 .chevron-right {

@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Link } from 'gatsby'
-
 import logo from '../img/logo.svg'
 
 const Footer = class extends React.Component {
@@ -8,27 +6,37 @@ const Footer = class extends React.Component {
     super(props)
     this.state = {
       mailTo: 'info@globalmeshlabs.com',
-      linkList: ['Twitter', 'Slack', 'TxTenna', 'Blog', 'Node Map'],
-      subLinks: ['Privacy', 'Terms of service', 'Open source']
+      linkList: [{'Twitter': 'https://twitter.com/?lang=en'}, {'Slack': 'https://twitter.com/?lang=en'}, {'TxTenna': 'https://twitter.com/?lang=en'}, {'Blog': 'https://twitter.com/?lang=en'}, {'Node Map': 'https://twitter.com/?lang=en'}],
+      subLinks: [{'Privacy': 'https://twitter.com/?lang=en'}, {'Terms of Service': 'https://twitter.com/?lang=en'}, {'Open Source': 'https://twitter.com/?lang=en'}]
     }
   }
   render() {
     console.log('this.state: ', this.state)
-    let links = this.state.linkList.map((link) =>
-      <a className="cFooter-link white" href="{link}">{link}
-        <svg className="chevron-right" width="12" height="12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-          <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
-        </svg>
-      </a>
+    let linkLabel = ''
+    let linkURL = ''
+    let sublinkLabel = ''
+    let sublinkURL = ''
+    let links = this.state.linkList.map((link) =>  {
+      linkURL = Object.values(link)
+      linkLabel = Object.keys(link);
+        return <a className="cFooter-link white" href="{linkURL}">{linkLabel}
+          <svg className="chevron-right" width="12" height="12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
+          </svg>
+        </a>
+      }
     )
-    let subLinks = this.state.subLinks.map((sublink) =>
-      <a className="cFooter-link blue" href="{sublink}">{sublink}</a>
+    let subLinks = this.state.subLinks.map((sublink) => {
+      sublinkURL = Object.values(sublink)
+      sublinkLabel = Object.keys(sublink);
+      return <a className="cFooter-link blue" href="{sublinkURL}">{sublinkLabel}</a>
+    }
     )
 
     return (
       <footer className="cFooter has-background-black has-text-white-ter">
         <div className="cFooter-info">
-          <h2 className="cFooter-title">Stay Connected</h2>
+          <h3 className="cFooter-title">Stay Connected</h3>
           <p className="cFooter-subtitle">Receive updates from Global Mesh Labs.</p>
           <form name="myform" action="handle-data.pl">
             <input className="cFooter-input" type="email" placeholder="YOUR EMAIL"></input>
