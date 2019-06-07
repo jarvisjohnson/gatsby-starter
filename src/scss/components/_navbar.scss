@@ -1,13 +1,24 @@
 body {
     background:$c-black !important;
+    margin:0;
 }
 .cNav {
     padding:15px 0;
     border-bottom:1px solid $c-teal;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 5;
+    background:$c-black;
     &-search {
         display: none;
     }
     .navbar-brand {
+        line-height: 0;
+        .navbar-item {
+            line-height: 0;
+        }
         img {
             position:relative;
             z-index:6;
@@ -43,8 +54,9 @@ body {
         font-weight: bold;
         text-decoration: none;
         @media(max-width:1024px) {
-            font-size:35px;
+            // font-size:35px;
             line-height: 2;
+            text-align: right;
         }
         &:hover {
             color:$c-white;
@@ -54,25 +66,25 @@ body {
         @extend .animatable;
 
         @media(max-width:1024px) {
-            width:100vw;
-            height:100vh;
-            position:fixed;
-            top:0;
-            left:0;
-            bottom:0;
-            padding-top:120px;
+            position:absolute;
+            top:57px;
+            left:-20px;
+            right:-20px;
+            padding:15px 0;
             background:$c-black;
             z-index:5;
-            transform:translateY(-100%);
+            // transform:translateX(-100%);
             pointer-events: none;
             opacity: 0;
+            border-bottom:1px solid $c-teal;
             &.is-active {
                 opacity:1;
                 pointer-events: auto;
-                transform: translateY(0);
+                // transform: translateX(0);
             }
             .navbar-start {
                 flex-direction: column;
+                padding-right:15px;
             }
         }
     }
@@ -86,12 +98,30 @@ body {
         @media(max-width: 1024px) {
             display:block;
         }
+        @extend .animatable;
+
         >span {
-            width:35px;
+            width:25px;
             height:2px;
-            background:$c-white;
+            background:$c-teal;
             display: block;
-            margin:8px 0;
+            margin:5px auto;
+            @extend .animatable;
+            transform-origin: center center;
+        }
+        &.is-active {
+            transform:translateY(-50%) translateX(-15%);
+            span:nth-child(2) {
+                opacity: 0;
+                width:1px;
+                
+            }
+            span:first-child {
+                transform:rotate(45deg) translateX(40%);
+            }
+            span:last-child {
+                transform:rotate(-45deg) translateX(40%);
+            }
         }
     }
 }
