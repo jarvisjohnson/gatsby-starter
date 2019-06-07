@@ -1,6 +1,11 @@
 body {
     background:$c-black !important;
     margin:0;
+    padding-top:120px;
+    @media(max-width:1024px) {
+        padding-top:50px;
+    }
+
 }
 .cNav {
     padding:15px 0;
