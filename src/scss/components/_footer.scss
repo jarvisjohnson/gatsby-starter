@@ -33,6 +33,11 @@ body {
         @media (max-width: 425px) {
             width: 30%;
         }
+        @extend .animatable;
+        &:hover {
+            background:$c-white;
+            color:$c-teal;
+        }
     }
     form {
         max-width: 1340px;

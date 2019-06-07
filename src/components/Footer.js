@@ -28,11 +28,12 @@ const Footer = class extends React.Component {
         <div className="cFooter-info">
           <h3 className="cFooter-title">Stay Connected</h3>
           <p className="cFooter-subtitle">Receive updates from Global Mesh Labs.</p>
-          <form name="myform" action="handle-data.pl">
-            <input className="cFooter-input" type="email" placeholder="YOUR EMAIL"></input>
+          <form method="post" action="//manage.kmail-lists.com/subscriptions/subscribe">
+            <input className="cFooter-input" type="email" name="email" placeholder="YOUR EMAIL"></input>
             <input className="cFooter-btn" type="submit" value="SIGN UP" />
+            <input type="hidden" name="g" value="HVBegW"/>
           </form>
-          <p className="cFooter-subtext">Contact Us: <a className="cFooter-link blue" href="mailto:{this.props.mailTo}">{this.props.mailTo}</a></p>
+          <p className="cFooter-subtext">Contact Us: <a className="cFooter-link blue" href={`mailto:${this.props.mailTo}`}>{this.props.mailTo}</a></p>
           <div className="cFooter-linkList">
             {links}
           </div>
