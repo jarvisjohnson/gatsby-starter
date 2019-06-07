@@ -30,7 +30,7 @@ const Footer = class extends React.Component {
         <div className="cFooter-info">
           <h3 className="cFooter-title">Stay Connected</h3>
           <p className="cFooter-subtitle">Receive updates from Global Mesh Labs.</p>
-          <form method="post" action="//manage.kmail-lists.com/subscriptions/subscribe">
+          <form method="post" action="https://manage.kmail-lists.com/subscriptions/subscribe">
             <input className="cFooter-input" type="email" name="email" placeholder="YOUR EMAIL"></input>
             <input className="cFooter-btn" type="submit" value="SIGN UP" />
             <input type="hidden" name="g" value="HVBegW"/>
