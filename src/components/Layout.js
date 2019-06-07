@@ -51,10 +51,10 @@ const TemplateWrapper = ({ children }) => {
         mailTo={'info@globalmeshlabs.com'}
         linkList={ 
           [
-            {'Twitter': 'https://twitter.com/?lang=en'}, 
-            {'Slack': 'https://twitter.com/?lang=en'}, 
-            {'TxTenna': 'https://twitter.com/?lang=en'}, 
-            {'Blog': 'https://twitter.com/?lang=en'}, 
+            {'Twitter': 'https://twitter.com/globalmeshlabs?lang=en'}, 
+            {'Slack': 'https://globalmeshlabs.slack.com/'}, 
+            {'TxTenna': 'https://txtenna.com/'}, 
+            {'Blog': 'https://inthemesh.com/archive/author/richard-myers/'}, 
             {'Node Map': 'https://twitter.com/?lang=en'} 
           ]
         }

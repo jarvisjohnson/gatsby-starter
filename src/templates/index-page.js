@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <HomeHeader image="../img/home_hero.jpg">
+    <HomeHeader>
       <h1>Global Mesh Labs & the Lot49 mesh protocol</h1>
       <p>Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </HomeHeader>

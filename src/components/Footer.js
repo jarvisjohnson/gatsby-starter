@@ -11,7 +11,7 @@ const Footer = class extends React.Component {
     let links = this.props.linkList.map((link) =>  {
       linkURL = Object.values(link)
       linkLabel = Object.keys(link);
-        return <a className="cFooter-link white" href="{linkURL}">{linkLabel}
+        return <a className="cFooter-link white" href={linkURL}>{linkLabel}
           <img className="chevron-right" src={chevron} />
         </a>
       }
@@ -19,7 +19,7 @@ const Footer = class extends React.Component {
     let subLinks = this.props.subLinks.map((sublink) => {
       sublinkURL = Object.values(sublink)
       sublinkLabel = Object.keys(sublink);
-      return <a className="cFooter-link blue" href="{sublinkURL}">{sublinkLabel}</a>
+      return <a className="cFooter-link blue" href={sublinkURL}>{sublinkLabel}</a>
     }
     )
 
