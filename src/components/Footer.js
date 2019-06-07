@@ -4,7 +4,6 @@ import chevron from '../img/chevron-right.svg'
 
 const Footer = class extends React.Component {
   render() {
-    console.log('this.props: ', this.props)
     let linkLabel = ''
     let linkURL = ''
     let sublinkLabel = ''
