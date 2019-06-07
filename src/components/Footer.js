@@ -2,21 +2,13 @@ import React from 'react'
 import logo from '../img/logo.svg'
 
 const Footer = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      mailTo: 'info@globalmeshlabs.com',
-      linkList: [{'Twitter': 'https://twitter.com/?lang=en'}, {'Slack': 'https://twitter.com/?lang=en'}, {'TxTenna': 'https://twitter.com/?lang=en'}, {'Blog': 'https://twitter.com/?lang=en'}, {'Node Map': 'https://twitter.com/?lang=en'}],
-      subLinks: [{'Privacy': 'https://twitter.com/?lang=en'}, {'Terms of Service': 'https://twitter.com/?lang=en'}, {'Open Source': 'https://twitter.com/?lang=en'}]
-    }
-  }
   render() {
-    console.log('this.state: ', this.state)
+    console.log('this.props: ', this.props)
     let linkLabel = ''
     let linkURL = ''
     let sublinkLabel = ''
     let sublinkURL = ''
-    let links = this.state.linkList.map((link) =>  {
+    let links = this.props.linkList.map((link) =>  {
       linkURL = Object.values(link)
       linkLabel = Object.keys(link);
         return <a className="cFooter-link white" href="{linkURL}">{linkLabel}
@@ -26,7 +18,7 @@ const Footer = class extends React.Component {
         </a>
       }
     )
-    let subLinks = this.state.subLinks.map((sublink) => {
+    let subLinks = this.props.subLinks.map((sublink) => {
       sublinkURL = Object.values(sublink)
       sublinkLabel = Object.keys(sublink);
       return <a className="cFooter-link blue" href="{sublinkURL}">{sublinkLabel}</a>
@@ -42,7 +34,7 @@ const Footer = class extends React.Component {
             <input className="cFooter-input" type="email" placeholder="YOUR EMAIL"></input>
             <input className="cFooter-btn" type="submit" value="SIGN UP" />
           </form>
-          <p className="cFooter-subtext">Contact Us: <a className="cFooter-link blue" href="mailto:{this.state.mailTo}">{this.state.mailTo}</a></p>
+          <p className="cFooter-subtext">Contact Us: <a className="cFooter-link blue" href="mailto:{this.props.mailTo}">{this.props.mailTo}</a></p>
           <div className="cFooter-linkList">
             {links}
           </div>
