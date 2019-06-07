@@ -17,11 +17,11 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <HomeHeader image="../img/hello.jpg">
-      <h1>Global...</h1>
-      <p>Lorem ipsum dolor sit amet</p>
+    <HomeHeader image="../img/home_hero.jpg">
+      <h1>Global Mesh Labs & the Lot49 mesh protocol</h1>
+      <p>Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </HomeHeader>
-    <div
+    {/* {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -114,8 +114,8 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+    {/* </section> */}
   </div>
 )
 

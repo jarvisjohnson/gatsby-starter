@@ -1,0 +1,21 @@
+.cHomeHeader {
+  &-bg {
+    height: 595px;
+    background-size: cover;
+  }
+  &-inner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  &-title {
+    width: 60%;
+    font-size: 40px;
+  }
+  &-subtitle {
+    width: 30%;
+    font-size: 20px;
+  }
+}
