@@ -60,9 +60,9 @@ const TemplateWrapper = ({ children }) => {
         }
         subLinks={
           [
-            {'Privacy': 'https://twitter.com/?lang=en'}, 
-            {'Terms of Service': 'https://twitter.com/?lang=en'}, 
-            {'Open Source': 'https://twitter.com/?lang=en'}
+            {'Privacy': '/privacy'}, 
+            {'Terms of Service': '/terms-of-service'}, 
+            {'Open Source': '/open-source'}
           ]
         }
       />

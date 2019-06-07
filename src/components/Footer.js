@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logo.svg'
+import { Link } from 'gatsby'
 import chevron from '../img/chevron-right.svg'
 
 const Footer = class extends React.Component {
@@ -19,9 +20,9 @@ const Footer = class extends React.Component {
       }
     )
     let subLinks = this.props.subLinks.map((sublink) => {
-      sublinkURL = Object.values(sublink)
       sublinkLabel = Object.keys(sublink);
-      return <a className="cFooter-link blue" href={sublinkURL}>{sublinkLabel}</a>
+      sublinkURL = Object.values(sublink);
+      return <Link to={sublinkURL} className="cFooter-link blue">{sublinkLabel}</Link>
     })
 
     return (
