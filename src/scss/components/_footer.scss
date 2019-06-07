@@ -27,12 +27,17 @@ body {
         color: $c-white;
         border: 1px solid $c-teal;
     }
+    form {
+        max-width: 1340px;
+        margin: auto;
+    }
     &-linkList {
         display: flex;
         justify-content: space-evenly;
         width: 70%;
         margin: auto;
         margin-bottom: 20px;
+        max-width: 1340px;
     }
     &-link {
         &.blue {
@@ -61,6 +66,7 @@ body {
     &-subsection-inner {
         display: flex;
         margin: auto;
+        max-width: 1340px;
     }
     &-subtext {
         margin-bottom: 20px;
