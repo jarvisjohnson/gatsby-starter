@@ -4,7 +4,6 @@ import bg from '../img/home_hero.jpg';
 class HomeHeader extends React.Component {
   render() {
     const { data } = this.props
-    console.log('DATA: ', this.props.children)
 
     return (
       <div  className="cHomeHeader">
