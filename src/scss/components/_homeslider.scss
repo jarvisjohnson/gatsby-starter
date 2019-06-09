@@ -1,0 +1,42 @@
+.cHomeSlider {
+  position: relative;
+  min-height:  50vh;
+  display:flex;
+  flex-direction: column;
+  &-inner {
+    width: 90%;
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    padding: 35px 0;
+  }
+  &-text{
+    width: 50%;
+    margin-right: 10%;
+  }
+  &-title {
+    max-width:460px;
+    font-size:20px;
+  }
+  &-subtitle {
+    font-size: 20px;
+  }
+  img {
+    width: 50%;
+  }
+  &-buttons {
+    display: flex;
+  }
+  &-btn {
+    color: $c-white;
+    background-color: $c-teal;
+    width: 48%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-right: 2%;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
