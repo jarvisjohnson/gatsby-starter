@@ -45,6 +45,12 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+              trackingId: "UA-XXXXXXXXX-X",
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
