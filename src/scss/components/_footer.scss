@@ -44,9 +44,9 @@ body {
         font-size: 15px;
         letter-spacing: 1px;
         text-align: center;
-        @media (max-width: 425px) {
-            width: 30%;
-        }
+        // @media (max-width: 425px) {
+            // width: 30%;
+        // }
         @extend .animatable;
         &:hover {
             background:$c-white;
@@ -58,6 +58,9 @@ body {
         margin: 25px auto;
         width:90%;
         display: flex;
+        @media (max-width: 768px) {
+            width:100%;
+        }
     }
     &-linkList {
         display: flex;
