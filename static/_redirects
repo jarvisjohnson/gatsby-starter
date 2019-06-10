@@ -1,0 +1,14 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://globalmeshlabs.com/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshlabs.dev/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshlabs.engineering/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshlabsllc.com/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshlabsllc.org/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshlabs.net/* https://globalmeshlabs.org/:splat 301!
+https://globalmesh.com/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshnetworking.com/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshnetworking.org/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshnetworks.com/* https://globalmeshlabs.org/:splat 301!
+https://globalmeshnetworks.org/* https://globalmeshlabs.org/:splat 301!
