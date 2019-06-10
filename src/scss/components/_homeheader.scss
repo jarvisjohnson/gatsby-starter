@@ -45,6 +45,9 @@
     color: $c-white;;
     letter-spacing: 0;
     @extend .f-text;
+    p{
+      margin:8px 0;
+    }
     @media (max-width: 768px) {
       width:100%;
       font-size:18px;

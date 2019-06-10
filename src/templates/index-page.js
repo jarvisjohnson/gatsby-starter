@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import HomeHeader from '../components/HomeHeader'
 import HomeSlider from '../components/HomeSlider'
+import { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
   title,
@@ -16,7 +17,8 @@ export const IndexPageTemplate = ({
     <HomeHeader title={title.split('&').map((txt, idx) => {
       return (<div>{idx !== 0 ? '&' : null}{txt}</div>)
     })}>
-      {subheading}
+        <HTMLContent className="" content={subheading} />
+      
     </HomeHeader>
     <HomeSlider title={intro.title} slides={intro.blurbs}>
       {intro.text}

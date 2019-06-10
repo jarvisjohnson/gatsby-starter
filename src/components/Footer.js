@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logo-black.svg'
+import logo from '../img/logo.svg'
 import { Link } from 'gatsby'
 import chevron from '../img/chevron-right.svg'
 

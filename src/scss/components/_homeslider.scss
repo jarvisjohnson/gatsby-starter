@@ -17,13 +17,15 @@
     @extend .animatable;
     &Text {
       min-height: 40px;
+      font-family: 'aktiv-grotesk-thin';
+      font-weight: 200;
+      line-height: 21px;
     }
     &Title, &Text {
       display: inline;
-      font-family: $f-aktiv;
-      font-weight: lighter;
     }
     &Title {
+      font-family: $f-aktiv;
       color:$c-teal;
       font-size:16px;
       font-weight: bold;

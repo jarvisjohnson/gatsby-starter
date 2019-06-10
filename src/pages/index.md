@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Global Mesh Labs & the Lot49 mesh protocol
 heading: Global Mesh Labs & the Lot49 mesh protocol
-subheading: 80 billion mobile messages are sent each day via carriers and ISPs. Mobile mesh networks offer an anti-fragile, decentralized alternative that can extend connectivity to places centralized networks can’t. The first step to building out a peer-to-peer global messaging network is to optimize for successful message delivery. We propose the Lot49 protocol to bootstrap coverage and ensure reliability. 
+subheading: <p>80 billion mobile messages are sent each day via carriers and ISPs. Mobile mesh networks offer an anti-fragile, decentralized alternative that can extend connectivity to places centralized networks can’t. </p><p>The first step to building out a peer-to-peer global messaging network is to optimize for successful message delivery. We propose the Lot49 protocol to bootstrap coverage and ensure reliability. </p>
 
 intro:
   blurbs:
