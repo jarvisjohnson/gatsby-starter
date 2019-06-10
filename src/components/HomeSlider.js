@@ -9,6 +9,8 @@ class HomeSlider extends React.Component {
       activeSlide:0,
       transition: null
     }
+  }
+  componentDidMount() {
     this.autoSlide = setInterval(() => {
       this.changeSlide()
     }, 4500)
