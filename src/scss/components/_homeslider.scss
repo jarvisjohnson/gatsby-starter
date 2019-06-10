@@ -11,21 +11,31 @@
     padding: 35px 0;
   }
   &-text{
-    width: 50%;
+    width: 45%;
     margin-right: 10%;
   }
-  &-title {
+  &-title, h2 {
     max-width:460px;
-    font-size:20px;
+    @extend .title;
   }
   &-subtitle {
-    font-size: 20px;
+    // font-size: 20px;
+    @extend .f-text;
+    max-width: 500px;
   }
   img {
-    width: 50%;
+    width: 60%;
   }
   &-buttons {
     display: flex;
+  }
+  &-buttons {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    > * {
+      width:45%;
+    }
   }
   &-btn {
     color: $c-white;
@@ -33,10 +43,23 @@
     width: 48%;
     font-size: 15px;
     letter-spacing: 1px;
-    margin-right: 2%;
+    // margin-right: 2%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    &:last-child {
+      margin-left: auto;
+    }
     padding: 20px 30px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    border:1px solid $c-teal;
+    font-weight: bold;
+    &:hover {
+      background:$c-white;
+      color:$c-teal;
+      border:1px solid $c-teal;
+    }
   }
 }

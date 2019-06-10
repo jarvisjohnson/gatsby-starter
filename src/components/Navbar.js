@@ -62,9 +62,9 @@ const Navbar = class extends React.Component {
               <a className="navbar-item" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/" target="_blank">
                 Lot49
               </a>
-              <Link className="navbar-item" to="/products">
+              <a className="navbar-item" target="_blank" href="https://github.com/global-mesh-labs">
                 Development
-              </Link>
+              </a>
               <a className="navbar-item" href="https://github.com/global-mesh-labs" target="_blank">
                 Blog
               </a>

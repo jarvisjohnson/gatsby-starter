@@ -9,11 +9,11 @@ class HomeHeader extends React.Component {
       <div  className="cHomeHeader">
         <div className="cHomeHeader-bg" style={{backgroundImage:`url(${bg})`}}></div>
         <div className="cHomeHeader-inner">
-          <div className="cHomeHeader-title"> 
-            {this.props.children[0]}
-          </div>
+          <h1 className="cHomeHeader-title"> 
+            {this.props.title}
+          </h1>
           <div className="cHomeHeader-subtitle"> 
-            {this.props.children[1]}
+            {this.props.children}
           </div>
         </div>
       </div>

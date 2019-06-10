@@ -1,4 +1,22 @@
 @import 'config/variables';
+.title {
+    font-size:40px;
+    font-weight: bold;
+    margin:0 0 15px 0;
+    letter-spacing: 0;
+    @media (max-width: 768px) {
+        font-size: 26px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+.f-text {
+    font-family: $f-freight;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
 @import 'components/navbar';
 @import 'components/team';
 @import 'components/footer';

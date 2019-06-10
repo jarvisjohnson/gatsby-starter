@@ -35,7 +35,7 @@ const Footer = class extends React.Component {
             <input className="cFooter-btn" type="submit" value="SIGN UP" />
             <input type="hidden" name="g" value="HVBegW"/>
           </form>
-          <p className="cFooter-subtext">Contact Us: <a className="cFooter-link blue" href={`mailto:${this.props.mailTo}`}>{this.props.mailTo}</a></p>
+          <p className="cFooter-subtext">Contact us: <a className="cFooter-link blue" href={`mailto:${this.props.mailTo}`}>{this.props.mailTo}</a></p>
           <div className="cFooter-linkList">
             {links}
           </div>
@@ -46,7 +46,6 @@ const Footer = class extends React.Component {
               <img
                 src={logo}
                 alt="Mesh Labs"
-                style={{ width: '14em', height: '10em' }}
               />
             </div>
             <div className="cFooter-sublinkList">

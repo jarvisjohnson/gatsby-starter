@@ -18,12 +18,11 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <HomeHeader>
-      <h1>Global Mesh Labs & the Lot49 mesh protocol</h1>
+    <HomeHeader title="Global Mesh Labs &amp; the Lot49 mesh protocol">
       <p>Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </HomeHeader>
     <HomeSlider>
-      <h1>Lot49</h1>
+      <h2>Lot49</h2>
       <p>The Lot49 protocol builds on concepts and technology developed for the Bitcoin Lightning Network to incentivize data delivery in a mobile mesh communication network. Lot49 aims to make it possible to use bitcoin based micropayments to solve the following problems faced by existing mesh networks:</p>
     </HomeSlider>
     {/* {/* <div

@@ -3,6 +3,7 @@
   min-height:  50vh;
   display:flex;
   flex-direction: column;
+  border-bottom: 1px solid $c-teal;
   &-bg {
     position:absolute;
     top:0;
@@ -14,6 +15,10 @@
     background-repeat:no-repeat;
     background-color:#00051b;
     z-index:2;
+    @media (max-width: 768px) {
+      background-size:cover;
+      opacity: 0.8;;
+    }
 
   }
   &-inner {
@@ -24,15 +29,25 @@
     margin:auto;
     padding:35px 0;
   }
-  &-title {
+  &-title, &-title {
     max-width:460px;
-    font-size:20px;
+    @extend .title;
   }
   &-subtitle {
     width: 30%;
     font-size: 20px;
+    font-family: $f-freight;
+    font-weight: 100;
+    font-size: 20px;
+    color: $c-white;;
+    letter-spacing: 0;
+    @extend .f-text;
     @media (max-width: 768px) {
-      width:60%
+      width:100%;
+      font-size:18px;
+      text-align: center;
+      font-family: $f-freight;
+      font-weight: 100;
     }
   }
 }

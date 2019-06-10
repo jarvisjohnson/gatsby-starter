@@ -8,16 +8,16 @@ class HomeSlider extends React.Component {
       <div  className="cHomeSlider">
         <div className="cHomeSlider-inner">
           <div className="cHomeSlider-text">
-            <div className="cHomeSlider-title">
-              {this.props.children[0]}
-            </div>
+            <h2 className="cHomeSlider-title">
+              {this.props.title}
+            </h2>
             <div className="cHomeSlider-subtitle">
-              {this.props.children[1]}
+              {this.props.children}
             </div>
             <div>SLIDER GOES HERE</div>
             <div className="cHomeSlider-buttons">
-              <a className="cHomeSlider-btn" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/">Download Whitepaper</a>
-              <a className="cHomeSlider-btn" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/">View gitbook</a>
+              <a className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/">Download Whitepaper</a>
+              <a className="cHomeSlider-btn" target="_blank" href="https://github.com/global-mesh-labs">View gitbook</a>
             </div>
           </div>
         <img src={infographic} alt="Global Mesh Labs" />
