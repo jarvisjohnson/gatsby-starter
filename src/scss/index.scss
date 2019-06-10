@@ -1,4 +1,7 @@
 @import 'config/variables';
+* {
+    box-sizing: border-box;
+}
 .title {
     font-size:40px;
     font-weight: bold;

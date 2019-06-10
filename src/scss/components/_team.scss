@@ -3,6 +3,12 @@
         display: flex;
          flex-wrap: wrap;
          justify-content: space-between;
+        @media(max-width: 940px) {
+            position: relative;
+            margin-left:-5%;
+            margin-right:-5%;
+            overflow: hidden;
+        }
     }
     &-inner {
         width:90%;
@@ -18,6 +24,13 @@
         font-size: 40px;
         color: $c-white;;
         letter-spacing: 0;
+        @media(max-width: 940px) {
+            font-size: 40px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            text-align: center;
+            margin:50px 0 25px 0;
+        }
     }
     &Member {
         width:45%;
@@ -27,6 +40,22 @@
         flex-grow:0;
         flex-shrink: 0;
         margin:0;
+        @media(max-width: 940px) {
+            width:100%;
+            text-align: center;
+            flex-direction: column;
+            margin:0 auto 25px auto;
+            max-width: none;
+            padding:0 5% 5% 5%;
+            border-bottom:1px solid $c-teal;
+            &:last-child {
+                border-bottom:0;
+            }
+            &-infos {
+                max-width: 380px;
+                margin:0 auto;
+            }
+        }
         &-image {
             width:33%;
             max-width: 110px;
@@ -44,6 +73,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 100%;
+            @media(max-width: 940px) {
+                width:40%;
+                margin:0 auto 15px auto;
+            }
         }
         &-name {
             font-family: $f-aktiv;
@@ -52,6 +85,11 @@
             color: $c-white;;
             letter-spacing: 0;
             margin:0 0 12px 0;
+            @media(max-width: 940px) {
+                font-size: 26px;
+                letter-spacing: 0;
+                text-align: center;
+            }
         }
         &-title {
             font-family: $f-aktiv;
@@ -60,6 +98,11 @@
             color: $c-white;;
             letter-spacing: 0;
             margin:0 0 12px 0;
+            @media(max-width: 940px) {
+                font-size: 20px;
+                letter-spacing: 0;
+                text-align: center;
+            }
         }
         &-text {
             font-family: $f-freight;
@@ -67,6 +110,7 @@
             font-size: 15px;
             color: $c-white;;
             letter-spacing: 0;
+            
         }
         &-links {
             margin:12px 0;
