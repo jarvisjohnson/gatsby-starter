@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
         <HTMLContent className="" content={subheading} />
       
     </HomeHeader>
-    <HomeSlider title={intro.title} slides={intro.blurbs}>
+    <HomeSlider title={intro.title} noSlides={intro.blurbs}>
       {intro.text}
     </HomeSlider>
   </div>
