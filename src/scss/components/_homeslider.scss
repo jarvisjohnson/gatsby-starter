@@ -15,8 +15,8 @@
     display: block;
     margin-bottom:15px;
     @extend .animatable;
+    min-height: 45px;
     &Text {
-      min-height: 40px;
       font-family: 'aktiv-grotesk-thin';
       font-weight: 200;
       line-height: 21px;
