@@ -15,6 +15,9 @@
     display: block;
     margin-bottom:15px;
     @extend .animatable;
+    &Text {
+      min-height: 40px;
+    }
     &Title, &Text {
       display: inline;
       font-family: $f-aktiv;

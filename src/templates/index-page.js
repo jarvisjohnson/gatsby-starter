@@ -13,7 +13,9 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <HomeHeader title={title}>
+    <HomeHeader title={title.split('&').map((txt, idx) => {
+      return (<div>{idx !== 0 ? '&' : null}{txt}</div>)
+    })}>
       {subheading}
     </HomeHeader>
     <HomeSlider title={intro.title} slides={intro.blurbs}>
