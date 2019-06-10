@@ -9,6 +9,9 @@ class HomeSlider extends React.Component {
       activeSlide:0,
       transition: null
     }
+    this.autoSlide = setInterval(() => {
+      this.changeSlide()
+    }, 4500)
   }
   changeSlide(index = null) {
     const next = this.state.activeSlide >= this.props.slides.length - 1 ? 0 : this.state.activeSlide + 1
@@ -16,13 +19,16 @@ class HomeSlider extends React.Component {
     clearTimeout(this.state.transition)
     const timeout = setTimeout(() => {
       this.setState({
-        activeSlide: next,
+        activeSlide: newIndex,
         transition: null
       })
-    })
+    }, 300)
     this.setState({
       transition: timeout
     })
+    if (index !== null) {
+      clearInterval(this.autoSlide)
+    }
     
   }
   render() {
@@ -37,14 +43,14 @@ class HomeSlider extends React.Component {
             <div className="cHomeSlider-subtitle">
               {this.props.children}
             </div>
-            <div className={`cHomeSlider-slider${this.state.transition && ' in-transition'}`}>
+            <div className={`cHomeSlider-slider${this.state.transition  !== null ? ' in-transition' : ''}`}>
               <div className="cHomeSlider-slide">
                 <h4 className="cHomeSlider-slideTitle">{ this.props.slides[this.state.activeSlide].title }</h4>
                 <div className="cHomeSlider-slideText">{ this.props.slides[this.state.activeSlide].text }</div>
               </div>
               <div className="cHomeSlider-timeline">
                 {this.props.slides.map((slide, idx) => {
-                  return (<a onClick={this.changeSlide.bind(this, idx)}>Go to slide #{idx + 1 }</a>)
+                  return (<a className={idx === this.state.activeSlide ? 'active' : null} onClick={this.changeSlide.bind(this, idx)}>Go to slide #{idx + 1 }</a>)
                 })}
               </div>
             </div>

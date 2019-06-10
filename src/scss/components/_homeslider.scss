@@ -3,16 +3,92 @@
   min-height:  50vh;
   display:flex;
   flex-direction: column;
+  &-slider {
+    display: flex;
+    flex-direction: column;
+    margin:25px 0;
+    &.in-transition .cHomeSlider-slide {
+      opacity: 0;
+    }
+  }
+  &-slide {
+    display: block;
+    margin-bottom:15px;
+    @extend .animatable;
+    &Title, &Text {
+      display: inline;
+      font-family: $f-aktiv;
+      font-weight: lighter;
+    }
+    &Title {
+      color:$c-teal;
+      font-size:16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      &:after {
+        content:': ';
+      }
+    }
+  }
+  &-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 480px;
+    &:before {
+      position:absolute;
+      top:50%;
+      left:0;
+      right:0;
+      height:1px;
+      content:"";
+      display: block;
+      background:$c-teal;
+    }
+    >a {
+      position: relative;
+      font-size:0;
+      cursor: pointer;
+      &:before {
+        width:11px;
+        height:11px;
+        content:"";
+        display: block;
+        border-radius:100%;
+        border:1px solid $c-teal;
+        background:$c-black;
+        @extend .animatable;
+      }
+      &.active, &:hover {
+        &:before {
+          background:$c-teal;
+        }
+      }
+    }
+  }
   &-inner {
     width: 90%;
     display: flex;
     max-width: 1240px;
     margin: auto;
     padding: 35px 0;
+    @media(max-width: 940px) {
+      flex-wrap: wrap;
+    }
   }
   &-text{
     width: 45%;
     margin-right: 10%;
+    max-width: 500px;
+    position: relative;;
+    @media(max-width: 940px) {
+      order:2;
+      width:100%;
+      margin-right:auto;
+      margin-left:auto;
+      text-align: center;
+    }
   }
   &-title, h2 {
     max-width:460px;
@@ -21,10 +97,15 @@
   &-subtitle {
     // font-size: 20px;
     @extend .f-text;
-    max-width: 500px;
   }
   img {
     width: 60%;
+    @media(max-width: 940px) {
+      width:100%;
+      height:100%;
+      max-width: 550px;
+      margin:0 auto 35px auto;
+    }
   }
   &-buttons {
     display: flex;
@@ -40,7 +121,7 @@
   &-btn {
     color: $c-white;
     background-color: $c-teal;
-    width: 48%;
+    width: 45%;
     font-size: 15px;
     letter-spacing: 1px;
     // margin-right: 2%;
@@ -50,7 +131,7 @@
     &:last-child {
       margin-left: auto;
     }
-    padding: 20px 30px;
+    padding: 20px 5px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;

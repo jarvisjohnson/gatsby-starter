@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
     <HomeHeader title="Global Mesh Labs &amp; the Lot49 mesh protocol">
       <p>Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </HomeHeader>
-    <HomeSlider slides={[
+    <HomeSlider title="Lot49" slides={[
       {
         title: 'ZERO-START',
         text: 'How do we incent the use of a mesh network before it’s reached critical mass to become generally useful at scale?'
@@ -51,7 +51,6 @@ export const IndexPageTemplate = ({
         text: 'How do we incent & validate integrity in a mostly off-grid, entirely mobile mesh network?'
       }
     ]}>
-      <h2>Lot49</h2>
       <p>The Lot49 protocol builds on concepts and technology developed for the Bitcoin Lightning Network to incentivize data delivery in a mobile mesh communication network. Lot49 aims to make it possible to use bitcoin based micropayments to solve the following problems faced by existing mesh networks:</p>
     </HomeSlider>
   </div>
