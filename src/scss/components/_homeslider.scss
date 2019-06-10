@@ -86,8 +86,8 @@
     }
   }
   &-text{
-    width: 45%;
-    margin-right: 10%;
+    width: 50%;
+    margin-right: 8%;
     max-width: 500px;
     position: relative;;
     @media(max-width: 940px) {
@@ -103,7 +103,8 @@
     @extend .title;
   }
   &-subtitle {
-    // font-size: 20px;
+    font-size: 20px;
+    font-weight: 300;
     @extend .f-text;
   }
   img {

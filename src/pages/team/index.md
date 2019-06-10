@@ -20,9 +20,9 @@ members:
     twitterUrl: https://twitter.com/remyers_
     name: Richard Myers
     githubUrl: https://github.com/remyers
-  - image: /img/d_new.png
+  - image: /img/daniela.png
     text: >
-      Daniela is the co-founder &amp; CEO of <a rel="nopened noreferer" taget="_blank" href="https://gotenna.com/pages/about">goTenna</a>, and incubated the idea (<a rel="nopened noreferer" taget="_blank" href="https://www.youtube.com/watch?v=SWl2HBNyK48">watch her 2017 talk here</a>) for what eventually became Lot49 through her work building the world's first consumer-ready mobile mesh networking system, <a rel="nopened noreferer" taget="_blank" href="https://gotennamesh.com/">goTenna Mesh</a>. Inspired by the <a rel="nopened noreferer" taget="_blank" href="https://imeshyou.gotennamesh.com/">#imeshyou</a> community she's excited to work to bring the open-source Lot49 incentive protocol into the world, to drive the build-out of an infrastructure-free global-scale decentralized mesh network free of carriers and ISPs.  
+      Daniela is the co-founder &amp; CEO of <a rel="nopened noreferer" target="_blank" href="https://gotenna.com/pages/about">goTenna</a>, and incubated the idea (<a rel="nopened noreferer" target="_blank" href="https://www.youtube.com/watch?v=SWl2HBNyK48">watch her 2017 talk here</a>) for what eventually became Lot49 through her work building the world's first consumer-ready mobile mesh networking system, <a rel="nopened noreferer" target="_blank" href="https://gotennamesh.com/">goTenna Mesh</a>. Inspired by the <a rel="nopened noreferer" target="_blank" href="https://imeshyou.gotennamesh.com/">#imeshyou</a> community, she hopes the open-source Lot49 protocol will drive the build-out of an infrastructure-free global-scale decentralized mesh network, free of carriers and ISPs.  
 
     title: Mesh Networking Technologist
     twitterUrl: https://twitter.com/danielaperdomo

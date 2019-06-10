@@ -45,6 +45,8 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
         <link rel="stylesheet" href="https://use.typekit.net/zpz2esi.css" />
+
+
       </Helmet>
       <Navbar />
       <div>{children}</div>
