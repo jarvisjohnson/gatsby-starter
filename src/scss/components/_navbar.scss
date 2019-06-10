@@ -64,7 +64,14 @@ body {
             text-align: right;
             margin-left:0;
         }
-        &:hover {
+        padding-top:3px;
+        padding-bottom:3px;
+        border-bottom: 1px solid transparent;
+
+        &.active {
+            border-bottom:1px solid $c-teal;
+        }
+        &:hover, &.active {
             color:$c-white;
         }
     }
