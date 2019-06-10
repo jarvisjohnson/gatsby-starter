@@ -1,5 +1,5 @@
 ---
-templateKey: page-text
+templateKey: text-page
 title: Privacy Policy
 ---
 Effective Date: June 10, 2019
