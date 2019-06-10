@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Global Mesh Labs & the Lot49 mesh protocol
 heading: Global Mesh Labs & the Lot49 mesh protocol
-subheading: Lorem ipsum dolor sit amet, conser adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+subheading: 80 billion mobile messages are sent each day via carriers and ISPs. Mobile mesh networks offer an anti-fragile, decentralized alternative that can extend connectivity to places centralized networks can’t. The first step to building out a peer-to-peer global messaging network is to optimize for successful message delivery. We propose the Lot49 protocol to bootstrap coverage and ensure reliability. 
 
 intro:
   blurbs:
@@ -29,9 +29,6 @@ intro:
 
   title: Lot49
   text: >
-    The Lot49 protocol builds on concepts and technology developed for the 
-    Bitcoin Lightning Network to incentivize data delivery in a mobile mesh
-    communication network. Lot49 aims to make it possible to use bitcoin
-    based micropayments to solve the following problems faced by existing mesh networks
+    The Lot49 protocol whitepaper describes our open-source plan for including incentive payments along with data to encourage successful delivery by nodes in the network. In this way the protocol lets users pay each other, instead of a centralized ISP or mobile carrier, for providing essential communication services. The Lot49 protocol builds on technology developed for the Bitcoin Lightning Network to improve mesh network data delivery and drive bottom-up adoption by incentivizing people to provide coverage and capacity where and when it is needed.
 
 ---
