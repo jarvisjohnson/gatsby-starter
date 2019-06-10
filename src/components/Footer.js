@@ -52,7 +52,7 @@ const Footer = class extends React.Component {
               {subLinks}
             </div>
           </div>
-          <p className="cFooter-footnote">Global Mesh Labs, LLC</p>
+          <p className="cFooter-footnote">&copy; {(new Date()).getFullYear()} Global Mesh Labs, LLC</p>
         </div>
 
       </footer>
