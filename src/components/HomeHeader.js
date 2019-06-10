@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from '../img/home_hero.jpg';
+import bg from '../img/HeaderImage_Map.jpg';
 
 class HomeHeader extends React.Component {
   render() {
