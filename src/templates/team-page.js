@@ -5,6 +5,7 @@ import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
 
 import Layout from '../components/Layout'
+import { HTMLContent } from '../components/Content'
 
 export const TeamPageTemplate = ({
   title,
@@ -13,7 +14,9 @@ export const TeamPageTemplate = ({
   jobsTitle,
   members,
   jobs,
-}) => (
+}) => {
+
+  return (
   <div>
     <div className="cTeam">
         <div className="cTeam-inner">
@@ -28,7 +31,7 @@ export const TeamPageTemplate = ({
                             <div className="cTeamMember-infos">
                                 <div className="cTeamMember-name">{ member.name }</div>
                                 <div className="cTeamMember-title">{ member.title }</div>
-                                <div className="cTeamMember-text">{ member.text }</div>
+                                <HTMLContent className="cTeamMember-text" content={member.text} />
                                 <div className="cTeamMember-links">
                                     { member.twitterUrl ? <a href={member.twitterUrl} aria-label="View their Twitter"><img src={twitter} alt="View their Twitter" /></a> : null }
                                     { member.githubUrl ? <a href={member.githubUrl} aria-label="View their Github"><img src={github} alt="View their Github" /></a> : null }
@@ -40,8 +43,8 @@ export const TeamPageTemplate = ({
             </div>
         </div>
     </div>
-  </div>
-)
+  </div>)
+}
 
 TeamPageTemplate.propTypes = {
   title: PropTypes.string,
@@ -96,6 +99,7 @@ export const pageQuery = graphql`
             title
             text
             twitterUrl
+            githubUrl
         }
         heading
         description

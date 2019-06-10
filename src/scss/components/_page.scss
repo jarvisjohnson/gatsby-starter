@@ -13,6 +13,28 @@
         }
     }
     &-content{
-        margin-top:20px;
+        margin-top:35px;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $f-aktiv;
+        font-weight: lighter;
+        a {
+            color:currentColor;
+        }
+        h2 {
+            margin: 25px 0 15px 0;
+            @extend .subtitle;
+            @media(max-width: 768px) {
+                font-size:15px;
+                line-height: 20px;
+            }
+        }
+        p {
+            margin: 0 0 15px 0;
+            @media(max-width: 768px) {
+                font-size:15px;
+                line-height: 20px;
+            }
+        }
     }
 }

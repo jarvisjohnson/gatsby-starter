@@ -53,16 +53,17 @@ const TemplateWrapper = ({ children }) => {
         linkList={ 
           [
             {'Twitter': 'https://twitter.com/globalmeshlabs?lang=en'}, 
+            {'Telegram': 'https://t.me/joinchat/HvhpZhT_q4VYUgXm5hOFGA'},
             {'Slack': 'https://globalmeshlabs.slack.com/'}, 
             {'TxTenna': 'https://txtenna.com/'}, 
-            {'Blog': 'https://inthemesh.com/archive/author/richard-myers/'}, 
-            {'Node Map': 'https://twitter.com/?lang=en'} 
+            {'Blog': 'https://inthemesh.com/'}, 
+            {'Node Map': 'https://imeshyou.com/'} 
           ]
         }
         subLinks={
           [
-            {'Privacy': '/content/privacy'}, 
-            {'Terms of Service': '/content/terms-of-service'}, 
+            {'Privacy': '/content/privacy-policy'}, 
+            {'Terms of Service': '/content/terms-of-use'}, 
             {'Open Source': '/content/open-source'}
           ]
         }
