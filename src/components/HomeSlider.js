@@ -55,8 +55,8 @@ class HomeSlider extends React.Component {
               </div>
             </div>
             <div className="cHomeSlider-buttons">
-              <a className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/">Download Whitepaper</a>
-              <a className="cHomeSlider-btn" target="_blank" href="https://github.com/global-mesh-labs">View gitbook</a>
+              <a className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/"><span>Download Whitepaper</span></a>
+              <a className="cHomeSlider-btn" target="_blank" href="https://github.com/global-mesh-labs"><span>View gitbook</span></a>
             </div>
           </div>
         <img src={infographic} alt="Global Mesh Labs" />

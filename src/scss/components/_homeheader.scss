@@ -1,6 +1,9 @@
 .cHomeHeader {
   position: relative;
   min-height:  50vh;
+  @media(min-height:850px) {
+    min-height: 450px;
+  }
   display:flex;
   flex-direction: column;
   border-bottom: 1px solid $c-teal;

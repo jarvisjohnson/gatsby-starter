@@ -121,13 +121,19 @@
   &-btn {
     color: $c-white;
     background-color: $c-teal;
-    width: 45%;
+    width: 48%;
     font-size: 15px;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > span {
+      display: block;
+      margin:auto;
+    }
     // margin-right: 2%;
     flex-grow: 0;
     flex-shrink: 0;
-    display: block;
     &:last-child {
       margin-left: auto;
     }
