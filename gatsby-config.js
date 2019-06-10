@@ -49,6 +49,7 @@ module.exports = {
             options: {
               // replace "UA-XXXXXXXXX-X" with your own Tracking ID
               trackingId: "UA-XXXXXXXXX-X",
+            }
           },
           {
             resolve: 'gatsby-remark-images',
