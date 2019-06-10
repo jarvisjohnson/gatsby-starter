@@ -37,7 +37,8 @@
     @extend .title;
   }
   &-subtitle {
-    width: 30%;
+    // width: 30%;
+    max-width: 480px;
     font-size: 16px;
     font-family: $f-freight;
     font-weight: 100;
