@@ -16,6 +16,12 @@ body {
         color: #FFFFFF;
         letter-spacing: 1.67px;
         text-align: center;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 1.33px;
+            text-align: center;
+        }
     }
     &-info {
         border-top:1px solid $c-teal;
@@ -76,12 +82,18 @@ body {
             text-align: center;
             width: 100%;
         }
+        @media (max-width: 1024px) {
+            font-size:16px;
+        }
         a {
             font-family: $f-aktiv;
             font-weight: lighter;
             font-size: 20px;
             letter-spacing: 1.67px;
             white-space: nowrap;
+            @media (max-width: 1024px) {
+                font-size:16px;
+            }
         }
         img {
             @extend .animatable;
@@ -156,6 +168,13 @@ body {
         margin:10px 0  25px 0;
         font-weight: bold;
         font-size: 20px;
+        @media (max-width: 1024px) {
+            font-size:16px;
+            .cFooter-link{
+                font-size:16px;
+                margin:0;
+            }
+        }
     }
     &-sublinkList {
         margin: auto 0;
