@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: master
 
 media_folder: static/img
@@ -21,14 +21,16 @@ collections:
   #     - {label: "Body", name: "body", widget: "markdown"}
   #     - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "pages"
-    label: "Pages"
-    folder: "src/pages"
+  - name: "content"
+    label: "Text pages"
+    folder: "src/pages/content"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page-text"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
     create: true
+  - name: "pages"
+    label: "Pages"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
