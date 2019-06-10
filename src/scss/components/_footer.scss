@@ -7,15 +7,19 @@ body {
     text-align: center;
     &-title {
         @extend .title;
+        font-size:20px;
     }
     &-subtitle {
-        font-family: $f-aktiv;
+        font-family: $f-aktiv; 
         font-weight: lighter;
+        font-family: 'aktiv-grotesk-thin';
+        font-weight: 200;
         margin:15px 0;
         font-size: 18px;
         color: #FFFFFF;
         letter-spacing: 1.67px;
         text-align: center;
+
         @media (max-width: 1024px) {
             font-size: 16px;
             color: #FFFFFF;
