@@ -4726,6 +4726,12 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-plugin-google-analytics@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.21.tgz#df50703bf0ce72ec5d28bd35303eb17909972187"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-netlify-cms@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.0.tgz#71a614db1f96e8387e986f3b84fc843a6ec9d9d5"
