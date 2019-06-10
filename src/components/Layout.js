@@ -61,9 +61,9 @@ const TemplateWrapper = ({ children }) => {
         }
         subLinks={
           [
-            {'Privacy': '/privacy'}, 
-            {'Terms of Service': '/terms-of-service'}, 
-            {'Open Source': '/open-source'}
+            {'Privacy': '/content/privacy'}, 
+            {'Terms of Service': '/content/terms-of-service'}, 
+            {'Open Source': '/content/open-source'}
           ]
         }
       />
