@@ -146,6 +146,7 @@
     text-transform: uppercase;
     border:1px solid $c-teal;
     font-weight: bold;
+    @extend .animatable;
     &:hover {
       background:$c-white;
       color:$c-teal;
