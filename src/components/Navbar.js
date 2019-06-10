@@ -59,16 +59,16 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <a className="navbar-item" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/" target="_blank">
+              <a className="navbar-item" rel="noopener noreferrer" href="https://app.gitbook.com/@global-mesh-labs/s/lot49/" target="_blank">
                 Lot49
               </a>
-              <a className="navbar-item" target="_blank" href="https://github.com/global-mesh-labs">
+              <a className="navbar-item" target="_blank" rel="noopener noreferrer" href="https://github.com/global-mesh-labs">
                 Development
               </a>
               <Link activeClassName="active" className="navbar-item" to="/team">
                 Team
               </Link>
-              <a className="navbar-item" href="https://inthemesh.com/archive/author/richard-myers/" target="_blank">
+              <a className="navbar-item" rel="noopener noreferrer" href="https://inthemesh.com/archive/author/richard-myers/" target="_blank">
                 Blog
               </a>
               <div class="cNav-search">

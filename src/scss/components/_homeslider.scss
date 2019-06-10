@@ -46,10 +46,13 @@
       display: block;
       background:$c-teal;
     }
-    >a {
+    >button {
       position: relative;
       font-size:0;
       cursor: pointer;
+      border:none;
+      padding:0;
+      background:transparent;
       &:before {
         width:11px;
         height:11px;

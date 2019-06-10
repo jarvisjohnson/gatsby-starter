@@ -37,7 +37,6 @@ class HomeSlider extends React.Component {
     
   }
   render() {
-    const { data } = this.props
     return (
       <div  className="cHomeSlider">
         <div className="cHomeSlider-inner">
@@ -56,14 +55,14 @@ class HomeSlider extends React.Component {
                 </div>
                 <div className="cHomeSlider-timeline">
                   {this.props.slides.map((slide, idx) => {
-                    return (<a className={idx === this.state.activeSlide ? 'active' : null} onClick={this.changeSlide.bind(this, idx)}>Go to slide #{idx + 1 }</a>)
+                    return (<button className={idx === this.state.activeSlide ? 'active' : null} onClick={this.changeSlide.bind(this, idx)}>Go to slide #{idx + 1 }</button>)
                   })}
                 </div>
               </div>
             ) : null }
             <div className="cHomeSlider-buttons">
-              <a className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/"><span>Download Whitepaper</span></a>
-              <a className="cHomeSlider-btn" target="_blank" href="https://github.com/global-mesh-labs"><span>View gitbook</span></a>
+              <a rel="noopener noreferrer" className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/"><span>Download Whitepaper</span></a>
+              <a rel="noopener noreferrer" className="cHomeSlider-btn" target="_blank" href="https://github.com/global-mesh-labs"><span>View gitbook</span></a>
             </div>
           </div>
         <img src={infographic} alt="Global Mesh Labs" />

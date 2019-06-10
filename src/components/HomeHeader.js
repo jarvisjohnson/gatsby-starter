@@ -3,8 +3,6 @@ import bg from '../img/home_hero.jpg';
 
 class HomeHeader extends React.Component {
   render() {
-    const { data } = this.props
-
     return (
       <div  className="cHomeHeader">
         <div className="cHomeHeader-bg" style={{backgroundImage:`url(${bg})`}}></div>
