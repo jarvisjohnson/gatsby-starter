@@ -20,7 +20,6 @@ export const TeamPageTemplate = ({
             <h1 className="cTeam-title">{heading}</h1>
             <div className="cTeam-list">
                 {members.map((member, index) => {
-                    console.log('Hey!', member, github)
                     return (
                         <div className="cTeamMember" key={index}>
                             <div className="cTeamMember-image" style={{
