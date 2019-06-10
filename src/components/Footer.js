@@ -13,7 +13,7 @@ const Footer = class extends React.Component {
       linkURL = Object.values(link)
       linkLabel = Object.keys(link);
         return <div className="cFooter-link-wrapper">
-                  <a className="cFooter-link white" href={linkURL}>{linkLabel}
+                  <a className="cFooter-link white" target="_blank" rel="noopener noreferrer" href={linkURL}>{linkLabel}
                     <img className="chevron-right" alt=">" src={chevron} />
                   </a>
                 </div>
