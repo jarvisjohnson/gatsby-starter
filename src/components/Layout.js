@@ -43,12 +43,12 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/og-image-new.jpg" />
+        <meta property="og:image" content="https://globalmeshlabs.org/img/og-image-new.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@globalmeshlabs" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="/img/og-image-new.jpg" />
+        <meta name="twitter:image" content="https://globalmeshlabs.org/img/og-image-new.jpg" />
         <link rel="stylesheet" href="https://use.typekit.net/zpz2esi.css" />
 
 
