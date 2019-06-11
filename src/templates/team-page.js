@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
+import location from '../img/location.svg'
+import mountains from '../img/mountains.svg'
+import time from '../img/time.svg'
 
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
@@ -43,7 +46,29 @@ export const TeamPageTemplate = ({
             </div>
         </div>
     </div>
-  </div>)
+    <div class="cJobs">
+      <div className="cJobs-inner">
+        <h1 className="cJobs-title">Jobs</h1>
+        <div className="cJobs-list">
+            {jobs.map((job) => {
+              return (
+                <div className="cJobsPosting">
+                  <div className="cJobsPosting-infos">
+                    <div className="cJobsPosting-title">{job.title}</div>
+                    <div className="cJobsPosting-features">
+                      <div><img src={location} alt="location" />{job.location}</div>
+                      {job.remote ? (<div><img src={mountains} alt="Remote? " />Remote OK</div>) : null}
+                      <div><img src={time} alt="Employment" />{job.employment}</div>
+                    </div>
+                  </div>
+                  <a className="cJobsPosting-link" href={job.url} target="_blank" rel="nopened noreferer">Apply</a>
+                </div>
+              )
+            })}
+        </div>
+      </div>
+    </div>
+</div>)
 }
 
 TeamPageTemplate.propTypes = {
@@ -65,6 +90,7 @@ const TeamPage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         members={frontmatter.members}
+        jobs={frontmatter.jobs}
       />
     </Layout>
   )
@@ -100,6 +126,13 @@ export const pageQuery = graphql`
             text
             twitterUrl
             githubUrl
+        }
+        jobs {
+          title
+          remote
+          employment
+          url
+          location
         }
         heading
         description

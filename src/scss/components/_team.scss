@@ -26,7 +26,7 @@
         letter-spacing: 0;
         @media(max-width: 940px) {
             font-size: 40px;
-            color: #FFFFFF;
+            color: $c-white;
             letter-spacing: 0;
             text-align: center;
             margin:50px 0 25px 0;
@@ -127,6 +127,94 @@
                 &:hover {
                     transform:translateY(-2px);
                 }
+            }
+        }
+    }
+}
+
+
+.cJobs {
+    border-top: 1px solid $c-teal;
+    &-inner {
+        @extend .cTeam-inner;
+        padding:35px 0;
+        @media(max-width: 768px) {
+            padding:0;
+        }
+    }
+    &-title {
+        @extend .cTeam-title;
+    }
+    &Posting {
+        max-width: 1152px;
+        display: flex;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+        &-title {
+            font-family: $f-aktiv;
+            font-size: 40px;
+            font-weight: bold;
+            color: $c-white;
+            letter-spacing: 0;
+            margin:35px 0;
+            @media(max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+        &-features {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $f-aktiv;
+            font-family: 'aktiv-grotesk-thin';
+            font-weight: 200;
+            font-size: 20px;
+            color: $c-white;
+            letter-spacing: 0;
+            @media(max-width: 768px) {
+                font-size: 13px;
+                letter-spacing: 1.33px;
+            }
+            img {
+                margin:0 15px 0 0;
+                vertical-align: middle;
+                @media(max-width: 768px) {
+                    width:20px;
+                    height:auto;
+                    margin-right:8px;
+                }
+            }
+            :first-child img, :last-child img {
+                @media(max-width: 768px) {
+                    height:18px;
+                    width:auto;
+                }
+            }
+        }
+        &-link {
+            display: block;
+            padding:15px 25px;
+            text-transform: uppercase;
+            font-family: $f-aktiv;
+            font-weight: bold;
+            font-size: 15px;
+            color: $c-white;;
+            letter-spacing: 1px;
+            text-align: center;
+            background:$c-teal;
+            border:1px solid $c-teal;
+            margin:auto 0 auto auto;
+            @extend .animatable;
+            text-decoration: none;
+            &:hover {
+                color:$c-teal;
+                background: $c-white;
+            }
+            @media(max-width: 768px) {
+                margin:20px auto 15px 0;
+                font-size: 15px;
+                letter-spacing: 0.94px;
             }
         }
     }

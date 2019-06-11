@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Global Mesh Labs',
+    title: 'Global Mesh Labs and the Lot49 mesh protocol.',
     description:
-      'TODO',
+      'The Lot49 protocol builds on concepts and technology developed for the Bitcoin Lightning Network to incentivize data delivery in a global decentralized mesh communication network. Lot49 aims to use bitcoin based micropayments to drive the bottom-up adoption of this network by incentivizing people to provide coverage and capacity where and when it is needed.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -48,7 +48,7 @@ module.exports = {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
               // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-              trackingId: "UA-XXXXXXXXX-X",
+              trackingId: "UA-40601919-6",
             }
           },
           {
