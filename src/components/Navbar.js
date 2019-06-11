@@ -71,6 +71,9 @@ const Navbar = class extends React.Component {
               <a className="navbar-item" rel="noopener noreferrer" href="https://inthemesh.com/archive/author/richard-myers/" target="_blank">
                 Blog
               </a>
+              <a className="navbar-item" rel="noopener noreferrer" href="https://twitter.com/globalmeshlabs?lang=en" target="_blank">
+                Twitter
+              </a>
               <div class="cNav-search">
                 <input type="text" id="cNav-search" />
                 <label for="cNav-search" aria-label="Search"></label>

@@ -51,7 +51,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Footer 
-        mailTo={'info@globalmeshlabs.com'}
+        mailTo={'info@globalmeshlabs.org'}
         linkList={ 
           [
             {'Twitter': 'https://twitter.com/globalmeshlabs?lang=en'}, 
