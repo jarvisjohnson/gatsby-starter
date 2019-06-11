@@ -66,7 +66,7 @@ const TemplateWrapper = ({ children }) => {
           [
             {'Privacy': '/content/privacy-policy'}, 
             {'Terms of Service': '/content/terms-of-use'}, 
-            {'Open Source': '/content/open-source'}
+            {'Open-Source': '/content/open-source'}
           ]
         }
       />
