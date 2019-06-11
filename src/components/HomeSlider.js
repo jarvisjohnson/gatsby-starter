@@ -61,7 +61,7 @@ class HomeSlider extends React.Component {
               </div>
             ) : null }
             <div className="cHomeSlider-buttons">
-              <a className="cHomeSlider-btn" target="_blank" href="/files/Lot49%20Protocol%20Whitepaper%20-%20DRAFT%200.8.5.pdf"><span>Download Whitepaper</span></a>
+              <a className="cHomeSlider-btn" target="_blank" href="/files/Lot49%20Protocol%20Whitepaper%20-%20DRAFT%200.8.5_20190611.pdf"><span>Download Whitepaper</span></a>
               <a rel="noopener noreferrer" className="cHomeSlider-btn" target="_blank" href="https://global-mesh-labs.gitbook.io/lot49/"><span>View gitbook</span></a>
             </div>
           </div>
