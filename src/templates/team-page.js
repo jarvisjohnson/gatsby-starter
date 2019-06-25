@@ -46,7 +46,8 @@ export const TeamPageTemplate = ({
             </div>
         </div>
     </div>
-    <div class="cJobs">
+    { false ? 
+    (<div class="cJobs">
       <div className="cJobs-inner">
         <h1 className="cJobs-title">Jobs</h1>
         <div className="cJobs-list">
@@ -67,7 +68,7 @@ export const TeamPageTemplate = ({
             })}
         </div>
       </div>
-    </div>
+    </div>) : null}
 </div>)
 }
 

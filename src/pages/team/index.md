@@ -40,4 +40,16 @@ members:
     twitterUrl: https://twitter.com/danielaperdomo
     name: Daniela Perdomo
     githubUrl: 
+  - image: /img/jonathan.jpg
+    text: 
+    title: Intern, Off-Chain Protocol Development
+    twitterUrl:
+    name: Jonathan Harvey-Buschel
+    githubUrl: 
+  - image: /img/will.jpg
+    text: 
+    title: Bitcoin/Lightning App Development
+    twitterUrl:
+    name: Will Clark
+    githubUrl: 
 ---
