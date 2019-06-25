@@ -41,13 +41,13 @@ members:
     name: Daniela Perdomo
     githubUrl: 
   - image: /img/jonathan.jpg
-    text: 
+    text: Johnathan works on Off-Chain Protocol Development for the summer. Jonathan is pursuing a BS in Electrical Engineering and Computer Science (EECS) from MIT. He is an Undergraduate Researcher at MIT Media Lab and President of the MIT Bitcoin Club.
     title: Intern, Off-Chain Protocol Development
     twitterUrl:
     name: Jonathan Harvey-Buschel
     githubUrl: 
   - image: /img/will.jpg
-    text: 
+    text: Will works on Bitcoin/Lightning App Development. Will has been a Technical & Quality Engineer and an Export Sales Engineer is currently self-teaching himself programming. He will be developing an approach to paying Lightning invoices over the goTenna Mesh network and integrating the public goTenna Mesh SDK into a system using open-source Bitcoin Lightning.
     title: Bitcoin/Lightning App Development
     twitterUrl:
     name: Will Clark
